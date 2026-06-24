@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css?v=2">
+    <title>Juanito Laguna: el recolector</title>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        
+        <h1 style="text-align:center; color:#c5a059;">JUANITO LAGUNA</h1>
+        
+        <div id="contenedor-juego">
+            <iframe id="juego-iframe" src="https://editor.p5js.org/MelanyMobrici/full/J77ybALbY" width="550" height="450" allowfullscreen></iframe>
+            <button id="btn-full" onclick="abrirPantallaCompleta()">Pantalla Completa</button>
+        </div>
+
+        <section class="seccion-contenido">
+            <div class="texto-bloque">
+                <h2>EL PROYECTO</h2>
+                <p>Este proyecto nace de una mirada crítica sobre el entorno que habitamos y el impacto de nuestra basura en los espacios naturales. El juego propone una experiencia donde la acción de pescar no busca el sustento, sino la restauración de un paisaje profundamente marcado por el desecho industrial y el olvido.</p>
+            </div>
+            <div class="imagen-bloque">
+                <img src="img/rioreconquista.jpg" alt="Río Reconquista">
+            </div>
+        </section>
+
+        <section class="seccion-contenido">
+            <div class="texto-bloque">
+                <h2>CÓMO JUGAR</h2>
+                <p>A través de una interfaz inspirada en la técnica de collage de Antonio Berni, el jugador debe clasificar los residuos recolectados del lago. El desafío es preciso: cada elemento tiene un lugar.</p>
+                <ul>
+                    <li><strong>Tacho Azul (Papel y Cartón):</strong> Destinado a diarios, revistas y cajas de cartón limpias.</li>
+                    <li><strong>Tacho Verde (Reciclables):</strong> Reservado para plásticos, vidrios y materiales recuperables.</li>
+                    <li><strong>Tacho Negro (Basura):</strong> Para residuos que no pueden ser reciclados o estan rotos.</li>
+                </ul>
+                <p>¡Cuidado: si te equivocas, el lago se contamina!</p>
+                <div class="contenedor-tachos">
+                    <img src="img/tachoverde.png" alt="Reciclables" class="tacho-img">
+                    <img src="img/tachoaazul.png" alt="Papel y Cartón" class="tacho-img">
+                    <img src="img/tachonegro.png" alt="Basura General" class="tacho-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-contenido">
+            <div class="texto-bloque">
+                <h2>¿QUIÉN ES JUANITO LAGUNA?</h2>
+                <p>Juanito Laguna es un personaje creado por el artista argentino Antonio Berni en la década de 1950. Representa a los niños de los barrios humildes, que viven a orillas de los grandes centros urbanos, rodeados de los restos de la sociedad de consumo.</p>
+                <p>Para Berni, Juanito no era solo un niño, sino una denuncia social.</p>
+            </div>
+            <div class="imagen-bloque">
+                <img src="img/JUANITO.png" alt="Foto de Antonio Berni">
+            </div>
+        </section>
+
+        <section class="seccion-proceso">
+            <h2>PROCESO DE CREACIÓN</h2>
+            <div class="contenedor-imagenes-proceso">
+                <img src="img/proceso1.jpg" alt="Paso 1 del proceso">
+                <img src="img/proceso2.jpg" alt="Paso 2 del proceso">
+                <img src="img/proceso3.jpg" alt="Paso 3 del proceso">
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function abrirPantallaCompleta() {
+            var elem = document.getElementById("juego-iframe");
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari/Chrome */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+<footer class="footer-creditos">
+    <div class="contenedor-principal">
+        <div class="footer-columnas">
+            <div class="columna">
+                <h3>Contacto</h3>
+                <p>Melany Mobrici</p>
+                <p>Instagram: @mmobrici.art</p>
+                <p>Tiktok: @melanymobrici</p>
+            </div>
+            
+            <div class="columna">
+                <h3>Materia</h3>
+                <p>Digitalizacion de imagenes.</p>
+                <p>Catedra I</p>
+<p>Alvarez Olmedo</p>
+            </div>
+
+            <div class="columna">
+                <h3>Sobre el sitio</h3>
+                <p>Juanito Laguna: el recolector.</p>
+
+                <p>Año 2026</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
